@@ -145,7 +145,7 @@ export default function Portfolio() {
             <div className="space-y-6 order-2 md:order-1 animate-fade-in">
               <div className="space-y-2">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-text-reveal">
-                  Hi, I'm <span className="text-primary">Fabio Espinoza</span>
+                  Hi, I&apos;m <span className="text-primary">Fabio Espinoza</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground animate-text-reveal animation-delay-300">
                   Software Developer
@@ -197,7 +197,7 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 animate-slide-up">
                 <p className="text-lg">
-                  I'm a passionate software developer with expertise in creating modern, responsive websites and
+                  I&apos;m a passionate software developer with expertise in creating modern, responsive websites and
                   applications powered with an efficient backend microservice architecture mostly in Golang. With a
                   strong foundation in both manual deployment and data analytics.
                 </p>
@@ -208,7 +208,7 @@ export default function Portfolio() {
                   Sustainability & Transportation, and a Server Hosting Company from Australia.
                 </p>
                 <p className="text-lg">
-                  When I'm not coding, you can find me playing soccer, reading, or exploring new cafes in the city!
+                  When I&apos;m not coding, you can find me playing soccer, reading, or exploring new cafes in the city!
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -279,7 +279,7 @@ export default function Portfolio() {
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6 animate-slide-up">
                 <p className="text-lg">
-                  I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+                  I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your vision.
                 </p>
                 <div className="space-y-4">
                   {[
