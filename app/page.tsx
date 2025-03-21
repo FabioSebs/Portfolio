@@ -403,13 +403,15 @@ export default function Portfolio() {
                     <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary/20 via-primary/10 to-secondary/20 p-[1px] animate-pulse-subtle">
                       <div className="relative flex items-center justify-between rounded-xl bg-background p-4">
                         <div>
-                          <a href="https://api.cdn.fabrzy.dev/internal/FabioEspinozaResume2025.pdf">
-                            <h4 className="font-medium">Download My Resume</h4>
-                            <p className="text-sm text-muted-foreground">Get a copy of my detailed resume</p>
-                          </a>
+
+                          <h4 className="font-medium">Download My Resume</h4>
+                          <p className="text-sm text-muted-foreground">Get a copy of my detailed resume</p>
+
                         </div>
                         <Button variant="outline" size="sm" className="rounded-full">
-                          <ArrowRight className="h-4 w-4 mr-2" /> Download
+                          <Link href="https://api.cdn.fabrzy.dev/internal/FabioEspinozaResume2025.pdf" className="flex">
+                            <ArrowRight className="h-4 w-4 mr-2" /> Download
+                          </Link>
                         </Button>
                       </div>
                     </div>
