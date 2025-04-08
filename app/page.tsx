@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Github, Linkedin, Mail, Youtube } from "lucide-react"
-
+import HiringInfo from "./components/hiring-info"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -261,6 +261,12 @@ export default function Portfolio() {
           </div>
         </section>
 
+        {/* Hiring Info Section */}
+        <div className="w-full justify-center flex flex-col items-center my-20">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl animate-text-reveal">Hiring Info</h2>
+          <HiringInfo />
+        </div>
+
         {/* Contact Section */}
         <section id="contact" className="py-20 scroll-mt-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto">
           {/* Contact section background elements */}
@@ -392,7 +398,7 @@ export default function Portfolio() {
                           <h4 className="font-medium">{item.label}</h4>
                           <p className="text-sm text-muted-foreground">{item.value}</p>
                           <span className="text-xs font-medium text-primary px-2 py-1 rounded-full bg-primary/10">
-                            {item.action}
+                            {item.action} 
                           </span>
                         </div>
                       </div>
