@@ -83,7 +83,7 @@ export default function Navbar({ activeSection }: Props) {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-blue-200 hover:text-cyan-300 transition-colors duration-300"
+          className="md:hidden mt-2 z-50 text-blue-200 hover:text-cyan-300 transition-colors duration-300"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >
@@ -93,11 +93,13 @@ export default function Navbar({ activeSection }: Props) {
 
       {/* Mobile Navigation */}
       <div
-        className={`md:hidden fixed inset-0 z-40 bg-blue-950/95 backdrop-blur-lg transform transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        className={`md:hidden relative h-3 inset-0 z-50 transform transition-transform duration-300 ease-in-out ${
+          mobileMenuOpen ? "translate-x-0 h-full" : "translate-x-full h-0"
         }`}
       >
-        <div className="flex flex-col h-full justify-center items-center space-y-8 p-8">
+        <div className={`flex flex-col h-full justify-center items-center space-y-8 p-8 bg-blue-950/90 opacity-80 transform transition-transform duration-300 ease-in-out
+                ${mobileMenuOpen ? "flex" : "hidden"}
+            `}>
           {["Home", "About", "Projects", "Contact"].map((item) => (
             <Link
               key={item}

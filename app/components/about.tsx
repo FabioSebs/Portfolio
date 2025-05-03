@@ -1,4 +1,5 @@
-import { BookOpenIcon, BriefcaseIcon, CodeIcon, GraduationCapIcon } from "lucide-react"
+import { BookOpenIcon, BriefcaseIcon, CodeIcon, GraduationCapIcon, SmilePlus } from "lucide-react"
+import { Laptop, Briefcase, LucideSmilePlus, Joystick } from "lucide-react"
 
 export default function About() {
   return (
@@ -46,22 +47,16 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-slide-up backdrop-blur-sm bg-blue-950/30 p-8 rounded-2xl border border-blue-500/10 shadow-xl">
+            <span className="flex gap-3"><Laptop className="text-white scale-150 mr-3"/> <Briefcase  className="text-white scale-150"/></span>
+
             <p className="text-lg text-blue-100/80 leading-relaxed">
-              I&apos;m a passionate software developer with expertise in creating modern, responsive websites and
-              applications powered with an efficient backend microservice architecture mostly in Golang. With a strong
-              foundation in both manual deployment and data analytics.
+              I&apos;m a passionate software developer with expertise in creating modern, scalable, and responsive websites. I have worked 
+              in creating microloan platform, billing panels, centralized news feeds, game leaderboards, and sports management platforms. 
             </p>
 
             <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent my-6"></div>
 
-            <p className="text-lg text-blue-100/80 leading-relaxed">
-              My professional journey began in 2020 when interning for a company in Jakarta as a Backend Developer. This
-              opened the door for other companies with the same position and even a contract job as a Data Analyst from
-              an American NGO. I have worked in the fields of FinTech Startups, NGO specializing in Sustainability &
-              Transportation, and a Server Hosting Company from Australia.
-            </p>
-
-            <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent my-6"></div>
+            <span className="flex gap-3"><SmilePlus className="text-white scale-150 mr-3"/> <Joystick  className="text-white scale-150"/></span>
 
             <p className="text-lg text-blue-100/80 leading-relaxed">
               When I&apos;m not coding, you can find me playing soccer, reading, or exploring new cafes in the city!
@@ -115,10 +110,19 @@ export default function About() {
               "Docker",
               "AWS",
               "Git",
+              "NGINX",
+              "Pulumi",
+              "GCP",
+              "Graphana",
+              "Prometheus",
+              "Microservices",
+              "System Design",
+              "CI/CD",
+              "Project Management",
             ].map((skill, index) => (
               <div
                 key={skill}
-                className="px-4 py-2 rounded-full bg-blue-900/30 text-blue-200 border border-blue-500/20 hover:border-blue-400/40 hover:bg-blue-800/30 transition-all duration-300 animate-fade-up backdrop-blur-sm"
+                className="px-4 py-2 rounded-full bg-blue-900/30 text-blue-200 border border-blue-500/20 hover:border-blue-400/40 hover:bg-yellow-500 hover:text-black hover:cursor-default transition-all duration-300 animate-fade-up backdrop-blur-sm"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {skill}

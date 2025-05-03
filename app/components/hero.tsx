@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[100vh] mt-3 flex flex-col justify-center px-4 md:px-8 lg:px-12 py-12 relative overflow-hidden bg-gradient-to-b from-blue-950 to-slate-900"
+      className="min-h-[100vh] flex flex-col justify-center px-4 md:px-8 lg:px-12 py-12 relative overflow-hidden bg-gradient-to-b from-blue-950 to-slate-900"
     >
       {/* Enhanced background elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -33,7 +33,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 items-center relative z-10">
+      <div className="grid md:grid-cols-2 gap-8 items-center relative z-10 mt-10">
         <div className="space-y-8 order-2 md:order-1 animate-fade-in">
           <div className="space-y-3">
             <div className="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium mb-2 backdrop-blur-sm">
@@ -51,8 +51,8 @@ export default function Hero() {
           </div>
 
           <p className="text-lg text-blue-100/70 max-w-md animate-text-reveal animation-delay-600 leading-relaxed">
-            I am a Software Developer from Peru and raised in New Jersey, USA. I now reside in Jakarta, Indonesia and
-            have worked as a Golang Developer, Data Analyst, and Fullstack Developer for several companies. I now am
+            I am a <span className="bg-gradient-to-t from-white to-blue-700 bg-clip-text text-transparent shadow-2xs">Software Developer </span> from Peru and raised in New Jersey, USA. I now reside in Jakarta, Indonesia and
+            have worked as a <strong><span className="bg-gradient-to-t from-green-500 to-blue-700 bg-clip-text text-transparent shadow-2xs shadow-white">Golang Developer</span></strong>, <strong><span className="bg-gradient-to-t from-red-500 to-blue-700 bg-clip-text text-transparent shadow-2xs shadow-white">Data Analyst</span></strong>, and <strong><span className="bg-gradient-to-t from-yellow-500 to-blue-700 bg-clip-text text-transparent shadow-2xs shadow-white">Fullstack Developer</span></strong> for several companies. I now am
             passionate to start my own startup and keep pursuing work opportunities!
           </p>
 
@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center order-1 md:order-2">
+        <div className="flex justify-center order-1 md:order-2 mt-8 md:mt-0">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden animate-float">
             {/* Glowing border effect */}
             <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full blur-sm opacity-70 animate-pulse-slow"></div>
