@@ -83,7 +83,7 @@ export default function Project() {
 function ProjectCard({ title, description, image, tags, link, index = 0 }: any) {
   return (
     <Card
-      className="overflow-hidden group animate-fade-up bg-blue-900/20 backdrop-blur-sm border-blue-500/10 hover:border-blue-400/30 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 relative"
+      className="overflow-hidden group animate-fade-up bg-emerald-900/50 backdrop-blur-sm border-blue-500/10 hover:border-blue-400/30 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-500/10 relative"
       style={{ animationDelay: `${index * 150 + 300}ms` }}
     >
       {/* Glowing corner effect */}
@@ -97,17 +97,9 @@ function ProjectCard({ title, description, image, tags, link, index = 0 }: any) 
         <Image
           src={image || "/placeholder.svg"}
           alt={title}
-          width={500}
-          height={300}
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          fill
+          className="object-contain transition-transform duration-700 group-hover:scale-110"
         />
-
-        {/* Featured badge - only for first project */}
-        {index === 0 && (
-          <div className="absolute top-3 left-3 px-3 py-1 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full text-xs font-medium text-white shadow-lg z-20 flex items-center gap-1">
-            <Star className="h-3 w-3" /> Featured
-          </div>
-        )}
       </div>
 
       <CardHeader>
@@ -185,5 +177,19 @@ const Projects = [
     photo: "/korunexus.png",
     tags: ["Next.js", "React", "Node.js", "Typescript", "Tailwind CSS", "Cloudflare"],
     link: "https://korunexus.com/",
+  },
+  {
+    name: "3MetaD Game Leaderboard",
+    description: "Live leaderboard feed of games within the 3MetaD ecosystem",
+    photo: "/leaderboardSite.png",
+    tags: ["Next.js", "React", "Node.js", "Typescript", "Tailwind CSS", "DynamoDB", "AWS"],
+    link: "https://3metad-leaderboard-frontend.vercel.app/",
+  },
+  {
+    name: "TCO Simulator",
+    description: "Simulator for caluclating Total Cost of Ownership for EVs",
+    photo: "/tcoSim.png",
+    tags: ["Next.js", "React", "Node.js", "Typescript", "Tailwind CSS", "Golang", "NGINX"],
+    link: "https://tco-simulator.fabrzy.dev/",
   },
 ]
