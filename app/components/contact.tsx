@@ -184,7 +184,7 @@ export default function Contact() {
                         className="rounded-full border-blue-500/30 bg-blue-800/50 text-blue-100 hover:bg-blue-700/50 hover:text-blue-50"
                       >
                         <Link
-                          href="https://api.cdn.fabrzy.dev/internal/FabioEspinozaResume2025.pdf"
+                          href="https://api.cdn.fabrzy.dev/internal/FabioEspinozaCV2025.pdf"
                           className="flex items-center gap-1"
                           target="_blank"
                         >
